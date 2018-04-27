@@ -1,6 +1,6 @@
 [comment]: <> (FIRSTNAME_BATCH_X_ASSIGNMENT1)
 
-| ![VideoBlocks](https://avatars0.githubusercontent.com/u/11587734?s=400&u=999125efb5b5a9abd271b85e55ffcb230e1253a4&v=4 =200x200)  | Ayush Kumar <br/> Batch 2 <br/> kayush206@gmail.com|
+| ![avatar](https://avatars0.githubusercontent.com/u/11587734?s=400&u=999125efb5b5a9abd271b85e55ffcb230e1253a4&v=4 =200x200)  | Ayush Kumar <br/> Batch 2 <br/> kayush206@gmail.com|
 |:---:|:---:|
 
 <br/>
@@ -25,7 +25,7 @@ Convolution is follows commutative and associative rules of algebra.
 
 Below visulization depicts the convolution on two box function from wikipedia:
 
-![from wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/6a/Convolution_of_box_signal_with_itself2.gif)
+![from_wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/6a/Convolution_of_box_signal_with_itself2.gif)
 
 It is one of most important operations in **computer vision**, **image** and **signal processing**. It can be applied for speech processing(1D convolution), for image processing(2D convolution)  and video processing (3D convolution). In this article, convolution in 2D spatial is discussed, which is most widely used in image processing as feature extracter and is a fundamental building block of Convolutional Neural Network (CNN). An image in computer is represented by a multi-dimensional array whose elements are numbers between 0 to 255. The size of this multi-dimensional array is Height x Width x #Channels i.e. color image has 3(RGB) channel where a grayscale image has only one channel.
 
@@ -36,13 +36,13 @@ Since convolution is a binary operator, it has a kernel(or filter) matrix which 
 
 Below there are two example provided in order to better understand the applications of convolution. In the first figure, adjacent kernel is being used to blur the original image while in the second figure kernel is being used to identify all the edges in the image.
 
-![Taj Blur](http://colah.github.io/posts/2014-07-Understanding-Convolutions/img/Gimp-Blur.png =400x200)
+![Taj_Blur](http://colah.github.io/posts/2014-07-Understanding-Convolutions/img/Gimp-Blur.png =400x200)
 
-![Taj edges](http://colah.github.io/posts/2014-07-Understanding-Convolutions/img/Gimp-Edge.png =400x200)
+![Taj_edges](http://colah.github.io/posts/2014-07-Understanding-Convolutions/img/Gimp-Edge.png =400x200)
 ___
 2] 1x1 Convolution:
 ----------------
-![1x1 convolution](https://raw.githubusercontent.com/iamaaditya/iamaaditya.github.io/master/images/conv_arithmetic/full_padding_no_strides_transposed_small.gif =300x300)
+![1x1_convolution](https://raw.githubusercontent.com/iamaaditya/iamaaditya.github.io/master/images/conv_arithmetic/full_padding_no_strides_transposed_small.gif =300x300)
 <br/>
 Whenever we see a neural network architecture with **1x1 kernel** size in convolutional layer, there are few questions comes into our mind, why this 1x1 convolutional is being used? Isn't it redundent?  
 
@@ -54,7 +54,7 @@ In **[GoogLeNet](https://arxiv.org/pdf/1409.4842.pdf)** architecture, 1x1 convol
 1) Used as **dimension reduction** layer.
 2) ReLU immediately after the 1x1 convolution adds more **non-linearity**.
 
-![1x1 convolution in GoogLeNet](https://raw.githubusercontent.com/iamaaditya/iamaaditya.github.io/master/images/inception_1x1.png)
+![1x1_convolution_in_GoogLeNet](https://raw.githubusercontent.com/iamaaditya/iamaaditya.github.io/master/images/inception_1x1.png)
 
 As shown in the image (b) Inception module with dimension reductions, *3x3* convolution and *5x5* convolution is preceded by *1x1* convolution and *3x3* max-pooling is followed by *1x1* convolution to reduce the dimensions with very little loss of information.
 *1x1* convolution or cross channel information learning is biologically inspired from **human visual cortex containing receptive fields (kernels)**.
