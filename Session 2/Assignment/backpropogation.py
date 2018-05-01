@@ -14,17 +14,21 @@ Y = np.array([[1], [1], [0]]) #[3x1]
 print ("X:\n", X, "\n----\n","Y:\n", Y)
 
 '''Hidden layer parameters'''
-wh = np.random.random((4,3)) #[4x3]
-bh = np.random.random((1,3)) #[1x3]
+# wh = np.random.random((4,3)) #[4x3]
+# bh = np.random.random((1,3)) #[1x3]
 # wh = np.array([[0.42, 0.88, 0.55], [0.10, 0.73, 0.68], [0.60, 0.18, 0.47], [0.92, 0.11, 0.52]])
 # bh = np.array([0.46, 0.72, 0.08])
+wh = np.array([[0.80, 0.72, 0.02], [0.87, 0.89, 0.83], [0.07, 0.48, 0.07], [0.18, 0.81, 0.32]])
+bh = np.array([0.06, 0.96, 0.12])
 print ("wh:\n",wh, "\n----\n", "bh:\n",bh, "\n----")
 
 '''output layer parameters'''
-wout = np.random.random((3,1)) #[3x1]
-bout = np.random.random((1)) #[1]
+# wout = np.random.random((3,1)) #[3x1]
+# bout = np.random.random((1)) #[1]
 # wout = np.array([[0.30], [0.25], [0.23]])
 # bout = [0.69]
+wout = np.array([[0.91], [0.46], [0.56]])
+bout = [0.29]
 print ("wout:\n", wout, "\n----\n", "bout:\n", bout, "\n----")
 
 for e in range(epoch):
