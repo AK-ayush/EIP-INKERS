@@ -24,6 +24,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 1:** Initialize weights and biases with random values (There are methods to initialize weights and biases but for now initialize with random values using python numpy scientific library)
+
 `wout = np.random.random((3,1)) #[3x1]`
 `bout = np.random.random((1)) #[1]`
 
@@ -32,6 +33,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 2:** Calculate hidden layer input:
+
 `hidden_layer_input = np.matmul(X,wh) + bh #[3x3]`
 
 ![step_2](https://github.com/AK-ayush/EIP-INKERS/raw/master/Session%202/Assignment/images/Session2_3.png) 
@@ -39,6 +41,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 3:** Perform non-linear transformation on hidden linear input, in this case we are using *sigmoid activation function*.
+
 `hiddenlayer_activations = sigmoid(hidden_layer_input) #[3x3]`
 
 ![step_3](https://github.com/AK-ayush/EIP-INKERS/raw/master/Session%202/Assignment/images/Session2_4.png)
@@ -46,6 +49,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 4:** Perform linear and non-linear transformation of hidden layer activation at output layer and compute error(E):
+
 `output_layer_input = np.matmul(hidden_layer_activations, wout)+bout #[3x1]`
 `output = sigmoid(output_layer_input) #[3x1]`
 
@@ -56,6 +60,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 5:** Compute slope at output and hidden layer
+
 `slope_output_layer = derivative_sigmoid(output)`
 `slope_hidden_layer = derivative_sigmoid(hidden_layer_activations)`
 
@@ -64,6 +69,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 7:** Compute delta at output layer:
+
 `d_output = E*slope_output_layer*lr #lr=1 learning rate`
 
 ![step_6](https://github.com/AK-ayush/EIP-INKERS/raw/master/Session%202/Assignment/images/Session2_7.png)
@@ -71,6 +77,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 8:**  Calculate Error at hidden layer:
+
 `error_at_hidden_layer = np.matmul(d_output, np.transpose(wout))`
 `d_hidden_layer = error_at_hidden_layer*slope_hidden_layer`
 
@@ -79,6 +86,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 9:** Update weight at both output and hidden layer:
+
 `wout = wout + np.matmul(np.transpose(hidden_layer_activations), d_output)*lr`
 
 `wh = wh + np.matmul(np.transpose(X), d_hidden_layer)*lr`
@@ -88,6 +96,7 @@ I have written a python code to simulate the backpropogation using only numpy wh
 <br/>
 
 **Step 10:** Update biases at both output and hidden layer:
+
 `bout = bout + np.sum(d_output, axis=0)*lr`
 
 `bh = bh + np.sum(d_hidden_layer, axis=0)*lr`
