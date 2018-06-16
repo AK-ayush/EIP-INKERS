@@ -1,0 +1,4 @@
+Here are the three links you need to go through:
+cs231n Video: https://www.youtube.com/watch?v=yCC09vCHzF8
+Evolution from Vanilla RNN to LSTM: https://www.youtube.com/watch?v=lycKqccytfU
+LSTM working Example: http://adventuresinmachinelearning.com/keras-lstm-tutorial/
