@@ -9,7 +9,8 @@ print(score)
 
 [0.032263540528796875, 0.9913]
 ```
-[Code](./Assignment-mnist.ipynb)
+Notebook: [Assignment-mnist.ipynb](./Assignment-mnist.ipynb)
+
 ---
 ---
 ---
