@@ -9,6 +9,7 @@ print(score)
 
 [0.032263540528796875, 0.9913]
 ```
+Notebook: [Assignment-mnist.ipynb](./Assignment-mnist.ipynb)
 
 ---
 ---
@@ -16,7 +17,7 @@ print(score)
 
 Convolution:
 -----------
-Convolutional is a matrix dot product and then summation operation, which is being applied on a input matrix to automate the feature engineering process. In convolutional layer, it's like a flshlight is being slided on each pixel of matrix and this flashlight can be understood as kernel/filter. A convolutional layer outputs a feature map containing the learnt features by this operation.
+Convolutional is a matrix dot product and then summation operation, which is being applied on a input matrix to automate the feature engineering process. In convolutional layer, it's like a flashlight is being slided on each pixel of matrix and this flashlight can be understood as kernel/filter. A convolutional layer outputs a feature map containing the learnt features by this operation.
 
 Filters/Kernels:
 ---------------
