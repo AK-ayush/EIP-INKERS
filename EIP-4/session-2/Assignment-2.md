@@ -206,6 +206,9 @@ print(score)
 ```
 
 ### Strategy taken for the notebooks:
+
+Both of these notebooks are based on provided notebook [EIGHTH.ipynb](https://colab.research.google.com/drive/1W56m2kaidSNlRnzGNPHqdzJn2nRTmmI_).  
+
 I have added the `bias=False` in each instance of `Convolutional2D()` API so that there will be no baises used in any of the model architectures. 
   
 Then, in the first notebook, I have reduced the number of kernels in first and second convolutional layer to bring down the total number of model parameters below to `14,937` while achieving the best accuracy of `99.45%` within `20` epochs.
