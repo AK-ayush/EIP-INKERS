@@ -213,6 +213,6 @@ I have added the `bias=False` in each instance of `Convolutional2D()` API so tha
   
 Then, in the first notebook, I have reduced the number of kernels in first and second convolutional layer to bring down the total number of model parameters below to `14,937` while achieving the best accuracy of `99.45%` within `20` epochs.
 
-And, in the second notebook, I have applied the `global Average Pooling` after applying the `1x1` convolutional to bring down the number of channels equal to number of classes. Total number of parameters used in this model are `14,072` while achieving the best accuracy of `99.47%` within `20` epochs.       
+And, in the second notebook, I have applied the `Global Average Pooling` after applying the `1x1` convolutional to bring down the number of channels equal to number of classes. Total number of parameters used in this model are `14,072` while achieving the best accuracy of `99.47%` within `20` epochs.       
 
 Please refer the notebook for deeper understanding.
