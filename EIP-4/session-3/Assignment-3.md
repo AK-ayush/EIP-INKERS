@@ -257,7 +257,6 @@ Model took 1752.82 seconds to train
 
 Accuracy on test data is: 83.84
 ```
-
-
+![model_accuracy](./model_accuracy.png)
 
 Best accuracy in 50 epochs is `85.36`.
