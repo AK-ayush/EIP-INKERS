@@ -1,7 +1,7 @@
 # Assignment-3
 ---
 
-Notebook: [code_9th.ipynb](./code_9th.ipynb)
+Notebook: [Assignment-3.ipynb](./Assignment-3.ipynb)
 
 ---
 
