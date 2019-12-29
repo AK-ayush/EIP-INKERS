@@ -6,7 +6,7 @@ As part of this assignment, I have trained several nural network models from scr
 
 I have applied following approaches:  
 
-1. Standariazation and noramalization
+1. Standariazation and noramalization of input images
 2. Random cutout regulazier
 3. Image Data augmentation
 4. Varrying learning rate
